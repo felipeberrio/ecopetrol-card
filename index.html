@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Ecopetrol</title>
+    <style>
+        body {
+            background-image: url('src/fondo.jpg');
+            /* Background image is centered vertically and horizontally at all times */
+            background-position: bottom center;
+            /* Background image doesn't tile */
+            background-repeat: no-repeat;
+            /* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
+            background-attachment: fixed;
+            /* This is what makes the background image rescale based on the container's size */
+            background-size: cover;
+            /* Set a background color that will be displayed while the background image is loading */
+            background-color: #464646;
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            background-color: rgb(12, 34, 9);
+            width: 300px;
+            height: 500px;
+            border-radius: 20px;
+            border-color: black;
+            overflow: hidden;
+            
+        }
+
+        @media (max-width: 300) {
+
+        }
+
+        img[src="src/petroleo.jpg"] {
+            width: 300px;
+            height: auto;
+        }
+
+        img[src="src/logo.png"] {
+            width: auto;
+            height: 50px;
+            position: relative;
+            align-items: center;
+            top: -50px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        section p:nth-child(3) {
+            color: azure;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+        }
+
+        section div:nth-child(4) p{
+            color: rgba(144, 153, 153, 0.704);
+            font-size: 12px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            width: 200px;
+
+        }
+
+        section div:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div>
+                <img src="src/petroleo.jpg" alt="Ecopetrol">
+            </div>
+            <div>
+                <img src="src/logo.png" alt="Logo">  
+            </div>
+
+            <p>Ecopetrol</p>
+            <div id="infoEmpresa">
+                <p>Ecopetrol S.A. es una Compañía organizada bajo la forma de sociedad anónima, del orden nacional, vinculada al Ministerio de Minas y Energía. Es una sociedad de economía mixta, de carácter comercial integrada del sector de petróleo y gas, que participa en todos los eslabones de la cadena de hidrocarburos: exploración, producción, transporte, refinación y comercialización.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
