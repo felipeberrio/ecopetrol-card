@@ -30,7 +30,7 @@
         section {
             background-color: rgb(12, 34, 9);
             width: 300px;
-            height: 500px;
+            height: 520px;
             border-radius: 20px;
             border-color: black;
             overflow: hidden;
@@ -39,6 +39,10 @@
 
         @media (max-width: 300) {
 
+        }
+
+        #logo {
+            height: 10px;
         }
 
         img[src="src/petroleo.jpg"] {
@@ -81,10 +85,9 @@
         }
 
         #infoEmpresa {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
     </style>
@@ -95,7 +98,7 @@
             <div>
                 <img src="src/petroleo.jpg" alt="Ecopetrol">
             </div>
-            <div>
+            <div id="logo">
                 <img src="src/logo.png" alt="Logo">  
             </div>
             <div>
